@@ -7,7 +7,7 @@ div.hero_wrapper {
   width: 100%;
   position: relative;
   height: 65vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 div.hero_wrapper::-webkit-scrollbar {

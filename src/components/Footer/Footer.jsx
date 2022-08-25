@@ -77,7 +77,7 @@ export default function Footer() {
         </div>
       </section> */}
 
-      <section className="footer_credit grey-text justify-flex-end flex flex column align-center justify-center p-10">
+      <section className="m-t-40 footer_credit grey-text justify-flex-end flex flex column align-center justify-center p-10">
         <p className="no-m-p">Copyright © AlwaysLegal Inc. 2022</p>
       </section>
     </footer>
