@@ -171,7 +171,7 @@ export default function Home() {
           <div className={`flex flex-row wrap justify-center g-20 ${s.cards_container}`}>
             {
               servicesArray.map((entity, index) => (
-                <div key={index} className={`p-15 br-10 ${s.card}`}>
+                <div key={index} className={`navy-text p-15 br-10 ${s.card}`}>
                   <p className="f-15 b-300">Start your business</p>
                   <h3 className="f-25">Incorporation</h3>
                   <h3 className="b-300 f-20">Starts at $500</h3>

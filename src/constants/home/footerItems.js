@@ -1,164 +1,164 @@
 const footerItems = [
   [
     {
-      text: "Providers",
+      text: "Company",
       link: "#",
     },
     {
-      text: "Oncology",
-      link: "#",
-    },
-
-    {
-      text: "Neurology & psychiatry",
-      link: "#",
-    },
-    {
-      text: "Infectious Disease",
-      link: "#",
-    },
-    {
-      text: "Cardiology",
-      link: "#",
-    },
-    {
-      text: "Academic and research",
-      link: "#",
-    },
-    {
-      text: "Emr Integration",
-      link: "#",
-    },
-
-  ],
-  [
-    {
-      text: "Second",
-      link: "#",
-    },
-    {
-      text: "Oncology",
+      text: "Login",
       link: "#",
     },
 
     {
-      text: "Neurology & psychiatry",
+      text: "Sign Up",
       link: "#",
     },
     {
-      text: "Infectious Disease",
+      text: "About Us",
       link: "#",
     },
     {
-      text: "Cardiology",
+      text: "Testimonials",
       link: "#",
     },
     {
-      text: "Academic and research",
+      text: "Announcements",
       link: "#",
     },
     {
-      text: "Emr Integration",
+      text: "Careers",
       link: "#",
     },
 
   ],
   [
     {
-      text: "Third",
+      text: "Services",
       link: "#",
     },
     {
-      text: "Oncology",
-      link: "#",
-    },
-
-    {
-      text: "Neurology & psychiatry",
-      link: "#",
-    },
-    {
-      text: "Infectious Disease",
-      link: "#",
-    },
-    {
-      text: "Cardiology",
-      link: "#",
-    },
-    {
-      text: "Academic and research",
-      link: "#",
-    },
-    {
-      text: "Emr Integration",
-      link: "#",
-    },
-
-  ],
-  [
-    {
-      text: "Fourth",
-      link: "#",
-    },
-    {
-      text: "Oncology",
+      text: "For Lawyers",
       link: "#",
     },
 
     {
-      text: "Neurology & psychiatry",
+      text: "Pricing",
       link: "#",
     },
     {
-      text: "Infectious Disease",
+      text: "Pro Package",
       link: "#",
     },
     {
-      text: "Cardiology",
+      text: "Legal Coincerge",
       link: "#",
     },
     {
-      text: "Academic and research",
+      text: "Locations",
       link: "#",
     },
     {
-      text: "Emr Integration",
+      text: "Practice Areas",
       link: "#",
     },
 
   ],
   [
     {
-      text: "Last",
+      text: "Resources",
       link: "#",
     },
     {
-      text: "Oncology",
+      text: "Legal Resource Hub",
       link: "#",
     },
 
     {
-      text: "Neurology & psychiatry",
+      text: "Upcoming Events",
       link: "#",
     },
     {
-      text: "Infectious Disease",
+      text: "Master Class",
       link: "#",
     },
     {
-      text: "Cardiology",
+      text: "Compare",
       link: "#",
     },
     {
-      text: "Academic and research",
+      text: "Partnership",
       link: "#",
     },
     {
-      text: "Emr Integration",
+      text: "Podcast",
       link: "#",
     },
 
   ],
+  // [
+  //   {
+  //     text: "Fourth",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Oncology",
+  //     link: "#",
+  //   },
+
+  //   {
+  //     text: "Neurology & psychiatry",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Infectious Disease",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Cardiology",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Academic and research",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Emr Integration",
+  //     link: "#",
+  //   },
+
+  // ],
+  // [
+  //   {
+  //     text: "Last",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Oncology",
+  //     link: "#",
+  //   },
+
+  //   {
+  //     text: "Neurology & psychiatry",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Infectious Disease",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Cardiology",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Academic and research",
+  //     link: "#",
+  //   },
+  //   {
+  //     text: "Emr Integration",
+  //     link: "#",
+  //   },
+
+  // ],
 ];
 
 export { footerItems };
