@@ -166,3 +166,54 @@ div.industries_container {
 div.industries_container div {
   white-space: nowrap;
 }
+
+
+
+
+
+/*=========================*/
+/* Popular Sevices Section */
+/*=========================*/
+section.popular_services > div.wrapper{
+  /* width: fit-content; */
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+div.cards_container div.card{
+  max-width: 400px;
+  min-width: 250px;
+  /* width: 100%; */
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+div.cards_container div.card::-webkit-scrollbar {
+  display: none;
+}
+
+div.cards_container div.card div.card_bg_image_container {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: 100px;
+}
+
+div.cards_container div.card div.card_bg_image_container > img {
+  /* width: 100%; */
+  height: 400px;
+  
+  /* width: 100%; */
+}
+
+
+
+/* Coinserge Section */
+section.coincerge > div.wrapper {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 2em 0 3.5em;
+}

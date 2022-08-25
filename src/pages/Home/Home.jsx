@@ -4,6 +4,7 @@ import { homeImages } from "../../constants";
 
 export default function Home() {
   const lawyersArray = [1, 2];
+  const servicesArray = [1, 2, 3, 4, 5];
 
   return (
     <main className={`${s.home_main}`}>
@@ -131,11 +132,11 @@ export default function Home() {
                     <div className={`${s.body_section}`}>
                       <h2 className="navy-text b-300">About</h2>
                       <p className="grey-text f-18 b-300">
-                        Nofa is available as a Fractional General Counsel*
+                        John is available as a Fractional General Counsel*
                         Specialties: corporate, privacy, tech.
                       </p>
                       <p className="grey-text f-18 b-300">
-                        Nofa&apos;s expertise is within the commercial, technology and
+                        John&apos;s expertise is within the commercial, technology and
                         privacy sectors, working closely with entrepreneurs,
                         start-ups and SMEs. Nofa has 9+ years of experience practicing
                         law and is dual qual...
@@ -158,7 +159,48 @@ export default function Home() {
               }
             </div>
           </details>
+        </div>
+      </section>
 
+      {/* ======================== */}
+      {/* Popular Services Section */}
+      {/* ======================== */}
+      <section className={`p-50 ${s.popular_services}`}>
+        <div className={`${s.wrapper}`}>
+          <h2 className="grey-text f-30">Popular Startup Services</h2>
+          <div className={`flex flex-row wrap justify-center g-20 ${s.cards_container}`}>
+            {
+              servicesArray.map((entity, index) => (
+                <div key={index} className={`p-15 br-10 ${s.card}`}>
+                  <p className="f-15 b-300">Start your business</p>
+                  <h3 className="f-25">Incorporation</h3>
+                  <h3 className="b-300 f-20">Starts at $500</h3>
+                  <div className={`${s.card_bg_image_container}`}>
+                    <img src={homeImages.live_wave} className="" alt="wave" />
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </section>
+
+      {/* ================= */}
+      {/* Coincerge Section */}
+      {/* ================= */}
+      <section className={`${s.coincerge}`}>
+        <div className={`centralize ${s.wrapper}`}>
+          <h1 className=" f-50 b-900 navy-text">Talk to our Legal Concierge™</h1>
+          <p className="b-300 f-20">
+            Not sure where to start? Our Legal Concierge™ experts
+            match you with the specialized lawyers your startup
+            needs.
+          </p>
+          <div className={`m-t-40 ${s.button_container}`}>
+            <button type="button" className="btn bg-dark-teal white-text p-l-40 p-r-40">
+              Book a demo
+            </button>
+          </div>
         </div>
       </section>
     </main>
