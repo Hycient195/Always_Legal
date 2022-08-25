@@ -1122,6 +1122,18 @@
   border: 1px solid #3f95f1;
 }
 
+.bg-navy {
+  background-color: #002d6a;
+}
+
+.navy-text {
+  color: #002d6a;
+}
+
+.border-navy {
+  border: 1px solid #002d6a;
+}
+
 .bg-pale-blue {
   background-color: #D9E6F5;
 }
