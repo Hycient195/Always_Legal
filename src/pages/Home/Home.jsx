@@ -118,7 +118,7 @@ export default function Home() {
                         <img src={homeImages.hero_bg_lawyer} alt="" className="" />
                       </div>
                       <div className={`navy-text ${s.title_text_container}`}>
-                        <h1 className="f-30">Nofa Khadduri</h1>
+                        <h1 className="f-30">John Doe</h1>
                         <span className="flex flex-row g-10">
                           <span className="">5 (3)</span>
                         </span>
@@ -149,7 +149,7 @@ export default function Home() {
                       </div>
                       <div className={`m-t-20 flex flex-row justify-flex-start ${s.button_container}`}>
                         <button type="button" className="btn bg-dark-teal white-text p-l-40 p-r-40">
-                          Book with Nofa
+                          Book with John
                         </button>
                       </div>
                     </div>

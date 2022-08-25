@@ -2,7 +2,7 @@ header{
   width: 100%;
   background-color: transparent;
   position: sticky;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   /* padding: 0 var(--base-padding); */
   color: rgb(151, 148, 148);
@@ -15,9 +15,6 @@ nav{
   padding: 0.5em calc(var(--base-padding) * 3.5);
   /* background-color: white; */
   box-shadow: 3px 4px 5px rgb(0,0,0,0.3);
-  z-index: 3;
-  /* position: absolute; */
-  /* margin-bottom: 0.4em; */
 }
 
 nav > div.title_container{

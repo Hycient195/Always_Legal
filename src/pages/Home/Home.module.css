@@ -82,6 +82,11 @@ section.patronizers {
   box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
 }
 
+section.patronizers > ul {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
 
 
 /*=========================*/
@@ -125,6 +130,11 @@ section.charateristics > div.wrapper > div.right > iframe {
 /*===========================*/
 /* Corporate Lawyers Section */
 /*===========================*/
+section.corporate_lawyers > div.wrapper {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
 section.corporate_lawyers div.head_section {
   border-bottom: 1px solid silver;
   padding-bottom: 2em;
