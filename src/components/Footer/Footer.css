@@ -17,34 +17,48 @@ div.footer_container{
 /*=====================*/
 div.footer_container > div.footer_left{
   display: flex;
-  justify-content: center;
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+div.footer_left > p.help-text {
+  line-height: 20px;
+  word-spacing: 3px;
+  font-weight: 400;
 }
 
 div.footer_container > div.footer_left > div.button_group{
-  width: max-content;
+  /* width: max-content; */
 }
 
-div.footer_container > div.footer_left > div.button_group > ul.buttons{
+div.footer_container > div.footer_left > div.button_group > ul{
   list-style: none;
   justify-self: left;
   width: 100%;
   padding-left: 0;
+  /* background-color: red !important; */
+  
 }
 
-div.footer_left > div.button_group > ul.buttons > li{
-  padding: 0.6em 2.2em;
-  border: 1px solid black;
-  margin: 1em 0;
+div.footer_left > div.button_group > ul > li{
+  /* padding: 0.6em 2.2em; */
+  /* border: 1px solid black; */
+  /* margin: 1em 0; */
   transition: all 300ms;
+  
 }
 
 div.footer_left > div.button_group > ul.buttons > li:hover{
   background-color: rgba(225, 255, 225, 0.2);
 }
 
-div.footer_left > div.button_group > ul.buttons > li > a{
+div.footer_left > div.button_group > ul > li > a{
   text-decoration: none;
-  color: inherit;
+  /* color: inherit; */
+}
+
+div.footer_left > div.button_group > ul > li > a * {
+  font-size: 1.2em !important;
 }
 
 div.footer_left > div.button_group > ul.buttons > li:last-of-type{
@@ -100,7 +114,7 @@ div.footer_right > ul > li:first-of-type{
 div.footer_right > ul > li{
   font-size: 1.3em;
   font-weight: 300;
-  color: black;
+  color: grey;
 }
 
 div.footer_right > ul > li > a{
