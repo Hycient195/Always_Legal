@@ -41,6 +41,49 @@ export default function Home() {
           <li>Patreon 5</li>
         </ul>
       </section>
+
+      {/* ======================= */}
+      {/* Characteristics Section */}
+      {/* ======================= */}
+      <section className={`p-50 ${s.charateristics}`}>
+        <div className={`${s.wrapper}`}>
+          <div className={`${s.left}`}>
+            <h1 className="f-40 b-900">We&apos;re different.</h1>
+            <ul className="">
+              <li className="flex g-10 flex-row justify-flex-start">
+                <div className={`${s.left}`} />
+                <div className={`${s.right}`}>
+                  <h3 className="no-m-p">Built for founders</h3>
+                  <p className="b-300">
+                    Our team understands your needs and your budget. Because we&apos;re founders too.
+                  </p>
+                </div>
+              </li>
+              <li className="flex g-10 flex-row justify-flex-start">
+                <div className={`${s.left}`} />
+                <div className={`${s.right}`}>
+                  <h3 className="no-m-p">Top startup lawyers</h3>
+                  <p className="b-300">
+                    Our team understands your needs and your budget. Because we&apos;re founders too.
+                  </p>
+                </div>
+              </li>
+              <li className="flex g-10 flex-row justify-flex-start">
+                <div className={`${s.left}`} />
+                <div className={`${s.right}`}>
+                  <h3 className="no-m-p">No billable hours</h3>
+                  <p className="b-300">
+                    Our team understands your needs and your budget. Because we&apos;re founders too.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div className={`${s.right}`}>
+            h
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

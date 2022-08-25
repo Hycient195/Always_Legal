@@ -79,5 +79,26 @@ div.hero_image_container > div.doctor_details_container::after{
 /*=====================*/
 section.patronizers {
   padding: 1em 0;
-  box-shadow: 2px 3px 4px rgba(0,0,0,0.53);
+  box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+}
+
+
+/* Characteristics Section */
+section.charateristics > div.wrapper {
+  /* background-color: cyan; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.charateristics > div.wrapper ul > li {
+  font-size: 1.2em;
+}
+
+section.charateristics > div.wrapper ul > li div.left {
+  background-color: white;
+  border: 2px solid black;
+  height: 20px;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: 3px;
 }
