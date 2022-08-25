@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="title_container">
           {/* <img src={homeImages.logoBlue} alt="" /> */}
           <div className="title">
-            <h1 className="title-text white-text">GoodLawyer</h1>
+            <h1 className="title-text white-text">AlwaysLegal</h1>
             {/* <p className="subtitle_text">
               ... subtitle goes here
             </p> */}
@@ -58,7 +58,7 @@ export default function Navbar() {
       {/*= ======================= */}
       <div className="hidden" ref={hidden}>
         <div className="dropdown_navbar">
-          <h2>GoodLawyer</h2>
+          <h2>AlwaysLegal</h2>
           <button type="button" onClick={toggleDropdown}>
             <div className="line" />
             <div className="line" />

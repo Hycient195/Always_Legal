@@ -36,7 +36,7 @@ export default function Footer() {
           <h2 className="navy-text no-m-p f-25 b-800">Need some help?</h2>
           <p className="b-300 no-m-p f-20 dark-teal-text">Message Us</p>
           <p className="f-12 no-m-p grey-text help-text">
-            Goodlawyer is an interactive online service that makes it
+            AlwaysLegal is an interactive online service that makes it
             faster and easier for clients to find and hire legal help
             solely based on their preferences. We are not a law firm,
             do not provide any legal services, legal advice or
@@ -78,7 +78,7 @@ export default function Footer() {
       </section> */}
 
       <section className="footer_credit grey-text justify-flex-end flex flex column align-center justify-center p-10">
-        <p className="no-m-p">Copyright © Goodlawyer Inc. 2022</p>
+        <p className="no-m-p">Copyright © AlwaysLegal Inc. 2022</p>
       </section>
     </footer>
   );

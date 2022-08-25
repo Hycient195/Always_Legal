@@ -15,7 +15,7 @@ export default function Home() {
               Top startup lawyers for Canadian founders.
             </h1>
             <p className={`f-25 b-300 white-text ${s.subtitle_text}`}>
-              From incorporation to Series A — Goodlawyer is the full service legal solution your startup can count on.
+              From incorporation to Series A — AlwaysLegal is the full service legal solution your startup can count on.
             </p>
             <div className={`${s.button_container}`}>
               <button type="button" className="btn p-l-40 p-r-40 green-text bg-white">
