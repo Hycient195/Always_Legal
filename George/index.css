@@ -1,0 +1,52 @@
+.row.content {height: 1500px}
+    
+
+    .bag{
+    /* height: 65px; */
+    top: 0;
+    box-shadow: 0px 6px 10px rgb(0 0 0 / 20%);
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    left: 0;}
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #ffff;
+      height: 100%;
+      margin-top: 70px;
+      padding: 0 35px;
+
+    }
+    .sidenav p{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 30px;
+        font-weight: 10px;
+    }
+    .welcome{
+      font-size: 20px !important;
+      padding-top: 10px !important;
+    }
+    .formm input{
+      height: 50px;
+    }
+    .form-accnt-rqst p{
+      font-size: 20px;
+    }
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #ffff; 
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }

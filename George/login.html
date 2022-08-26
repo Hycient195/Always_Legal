@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="./vendor/jquery.min.js"></script>
+  <script src="./bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+  <nav class="container bag">
+    <h1>Allways lawyer</h1>
+</nav>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      
+          <p> Create a free account</p>
+          <p class="welcome">Welcome! Create your free Goodlawyer account to continue.</p>
+          <form action="">
+            <div class="form-group formm" >
+              <input type="email" class="form-control" placeholder="EMAIL" id="email">
+            </div>
+            <div class="form-group formm">
+              <input type="password" class="form-control" placeholder="PASSWORD" id="pwd">
+            </div>
+            <button type="submit" style="height:50px; font-size: 25px;" class="btn btn-primary btn-block btn-submit">Submit</button>
+            <div class="form-accnt-rqst">
+              <p> Already have an account? <span> <a href="#">  Login</a></span></p>
+              </div>
+              <hr>
+              <p style="background-color:white; margin-top:-30px; font-size:16px; ">OR</p>
+            <button type="submit" style=" font-size: 25px; color: grey;" class="btn btn-default btn-block btn-submit"> <span ><img width="25px" src="data:image/png;base64,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" alt=""></span> Continue with Google </button>
+            <button type="submit" style=" font-size: 25px; color: grey;" class="btn btn-default btn-block btn-submit"> <span ><img width="25px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAMAAAAOusbgAAAAZlBMVEUEAgT///8AAABvb2/y8vIhISH39/eOj47o6Oh6enrj4+OHiIeVlZXZ2dnt7e3AwMAHCQeioqKwsLCpqqlXWFdHR0fKysplZWWbm5s4ODhOTk63t7fR0dERERE9PT2BgYEYGBgsLSymHz0MAAAD9klEQVRogcXb2ZaqMBAF0BCRFhARpEUbx///ycukEIZwitRdyWOvhi0QUpWkEM6Kdoji4nTZVy1Ji3PgrTiHoP27ezv517sctm22j4P/BntRkm1bSfRa+6fj1Y93/LB3Cx8jUgz9bZaiNgbvLr9atIffN2fokSNw5CNoZz8SgF6GbzmBbe3XxRgOMirbXnZiBLv+CvVz1fF6OH2tdWs6173aGjjIDdjmojX3ex5Ot2ZuTWcHMrz66ar0/UaDD78cbCXLEwW+HZncSvZxOGa5zV/6b2ogm4JPrG4pPya62AScMLuV7AIw9/XW8nUkj+DiP7iVPHzOQ/hMddUcaP7fMj0ckNxR7qWTfR3sbXG3VN5+EkfRrms3zeGDQKnCGSHReO3H6VWgg6USJxX4QnAvU6OCDhby3f+lfRjvWPIdTbALsNrBerB7xd2ZEL8A9x9zD37CrjxPuwtweWD3gzs4wm90OOMuwf2b3cEP2H3NphVLsJDFCD7hPXoz5wKwHMGEucJ83roIC/lJ9T8w5RWen5cBsHQV2CNc8DjEEWAhfxQ4IYzR+azr7AD45fZg702AR30rSsK2+cBp2lGkgQtCMBzBBRIVe8c3OUED/5nA8Ej7OUH8hfFBawKmxPDmBPkXhkfpKdglw/WIXcF4WGKBm+5VwWfSkQzwXwuT7jQHfA8aGI5LTLCQaQ2T+jQPnNdwSlxMYoC3NbwBD/yMToOx2oXy+cGZbhUMjtNy47lNcwZy13QJvXKutISDOwhPz+yVhr6Y8lnCaDaNwGiwkdcSRpMtBEbzGHks4ZARRociKQ8CDokIjCQCDXwWaKeG4BzOzQvhgJ0agT04oZCpgPNLBMZnI3vhMsIunDPKUBwY4R0+73sKeLkFgIF8voPhoFgOczNP9tvQoZoIy2PdRmGRHJwE7VZ/w6J5PK5huHN9j2GC4deJFw7xAYQX3uNDJi+c4kGCFy7wsMgJ12ERTQR44QOe+rDCR0KyxwpfCektK/wkJPSscEqZwvDB7RTG2qTN2jTV2sTc3lKEtcUXa8tN1hbYzJYU6XC3pGi0iEqHu0VUo2VjKqwsG5sslJPh/kI5aWvADFa3BkibIYawuhlC2f4xgofbP4QNL0N4uOGFp15G8MQWHxyjzODxpiY8fJnAk9u46IhtAE9vXKNBaj08t1UPZtgG8ExxAvgyr4bnyzGwApS1sK4ABdquW7vFpy25QYqM5ONHaSE2BdIXGUEdDK9o6h+0UFZlr5DMXumcvWJBe+WR9gpC7ZXA2iv6dayVOTv2CrvtlbI71or3HXufKzjWPtComqVPUqpm6SOcqln67Khqlj60amwrn5a1zcrHdF3j+HzwH0QlOhY/gt8AAAAAAElFTkSuQmCC" alt=""></span> Continue with Facebook </button>
+
+          </form>
+            <p style="font-size:14px;">By creating an account, I authorize Allways lawyer Inc. to contact me by email/phone/SMS and
+              I accept the Allways lawyer <a href="#">Terms of Use</a>  and <a href="#">Privacy Policy</a></p>
+    </div>
+
+    <div class="col-sm-9" style="background-color:rgba(32, 191, 253, 0.07);">
+      <p style="margin-top: 140px;">goes</p>
+      <!-- <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>I Love Food</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><br>
+      
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Officially Blogging</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-success">Lorem</span></h5><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="bandmember.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+          <p><span class="badge">1</span> Comment:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="bird.jpg" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+              <p>Me too! WOW!</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
