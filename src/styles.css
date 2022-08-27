@@ -1098,6 +1098,30 @@
   border: 1px solid rgb(0, 142, 130);
 }
 
+.bg-light-teal {
+  background-color: #d9eeec;
+}
+
+.light-teal-text {
+  color: #d9eeec;
+}
+
+.border-light-teal {
+  border: 1px solid #d9eeec;
+}
+
+.bg-very-light-teal {
+  background-color: #eef6f6;
+}
+
+.very-light-teal-text {
+  color: #eef6f6;
+}
+
+.border-very-light-teal {
+  border: 1px solid #eef6f6;
+}
+
 .bg-cyan {
   background-color: #0dcaf0;
 }
