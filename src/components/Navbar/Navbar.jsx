@@ -40,7 +40,7 @@ export default function Navbar() {
             !location.pathname.endsWith("/")
             && <li><Link to="/">Home</Link></li>
           }
-          <li className="login"><a href="/products">Login</a></li>
+          <li className="login"><a href="/products">Register</a></li>
           <li className="get_started"><a href="/about-us">Get Started</a></li>
           {/* <li><Link to="/contact-us">Contact</Link></li> */}
           <li className="hamburger">
