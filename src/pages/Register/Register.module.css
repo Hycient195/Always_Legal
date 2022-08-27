@@ -52,9 +52,15 @@ main.register_main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 90px);
+  min-height: calc(100vh - 90px);
   /* background-color: red; */
 }
+
+main.register_main > div.register_main_container > div {
+  display: flex;
+  flex-direction: column;
+}
+
 div.form_paper {
   max-width: 900px;
   margin-inline: auto;
@@ -89,8 +95,67 @@ div.form_footer > div.inputs_container {
 
 }
 
-
-
 form.register_form  label > input, select {
   width: 100%;
+}
+
+
+
+
+
+/*=================*/
+/* Proceed Section */
+/*=================*/
+section.proceed {
+  max-width: 400px;
+  text-align: center;
+  align-self: center !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+/*================================*/
+/* Media Query For Mobile Devices */
+/*================================*/
+@media (max-width: 950px) {
+  div.register_main_container {
+    padding: 1em 0;
+    /* width: 100vw; */
+  }
+
+  div.register_container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    /* gap: calc(var(--base-gap) * 3); */
+  }
+
+  div.register_container > aside {
+    display:  none;
+  }
+
+  div.form_paper {
+    width: 90vw;
+  }
+
+  div.form_paper > form {
+    padding: 1em;
+    
+  }
+
+  div.form_paper > form > div.inputs_container {
+    column-gap: 1em;
+  }
+
+  form.register_form  label > input, select {
+    width: 100%;
+    min-width: unset;
+  }
+
+  div.form_footer > div.inputs_container {
+    column-gap: 1em;
+    align-items: end !important;
+  }
 }

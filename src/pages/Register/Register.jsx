@@ -125,6 +125,24 @@ export default function Register() {
                   </div>
                 </form>
               </Paper>
+
+              {/* =============== */}
+              {/* Proceed Section */}
+              {/* =============== */}
+              <section className={`${s.proceed} m-t-60`}>
+                <p className="b-300">
+                  By continuing, you accept the <a href="/" className="dark-teal-text">AlwaysLegal Terns of Use</a>
+                  and <a href="/" className="dark-teal-text">Privacy Policy</a>
+                </p>
+                <div className={`${s.buttons_container} flex flex-row g-15 p-15 justify-center`}>
+                  <button type="button" className="btn grey-text p-l-40 p-r-40">
+                    Back
+                  </button>
+                  <button type="button" className="btn bg-dark-teal white-text p-l-40 p-r-40">
+                    Next
+                  </button>
+                </div>
+              </section>
             </div>
           </div>
         </main>
