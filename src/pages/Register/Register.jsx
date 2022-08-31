@@ -1,7 +1,35 @@
 import { Paper } from "@mui/material";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { register } from "../../redux/actions/actions";
 import s from "./Register.module.css";
 
 export default function Register() {
+  const dispatch = useDispatch();
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    emailAddress: "",
+    phoneNumber: "",
+    password: "",
+    country: "",
+    role: "",
+  });
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formSendData = {
+      fullName: `${formData.firstName} ${formData.lastName}`,
+      emailAddress: formData.emailAddress,
+      phoneNumber: formData.phoneNumber,
+      password: formData.password,
+      country: formData.country,
+      role: formData.role,
+    };
+    dispatch(register(formSendData));
+    console.log(formData);
+  };
+
   return (
     <main className={`${s.register_wrapper}`}>
       <div className={`${s.register_container}`}>
@@ -66,43 +94,107 @@ export default function Register() {
                     This information will show who the account belongs to.
                   </p>
                 </div>
-                <form action="" className={`${s.register_form} bg-very-light-teal p-25`}>
+                <form onSubmit={handleSubmit} className={`${s.register_form} bg-very-light-teal p-25`}>
                   <div className={`${s.inputs_container}`}>
                     <label htmlFor="firstname" className="">
                       <p className="b-300 m-b-5">First name</p>
-                      <input type="text" id="firstname" className="p-10 border-silver br-5 f-15" placeholder="First name" />
+                      <input
+                        onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                        value={formData.firstName}
+                        type="text"
+                        id="firstname"
+                        className="p-10 border-silver br-5 f-15"
+                        placeholder="First name"
+                      />
                     </label>
                     <label htmlFor="lastname" className="">
                       <p className="b-300 m-b-5">Last name</p>
-                      <input type="text" id="lastname" className="p-10 border-silver br-5 f-15" placeholder="First name" />
+                      <input
+                        onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                        value={formData.lastName}
+                        type="text"
+                        id="lastname"
+                        className="p-10 border-silver br-5 f-15"
+                        placeholder="First name"
+                      />
                     </label>
-                    <label htmlFor="Address" className="">
+                    <label htmlFor="email" className="">
+                      <p className="b-300 m-b-5">Email</p>
+                      <input
+                        onChange={(e) => setFormData({ ...formData, emailAddress: e.target.value })}
+                        value={formData.emailAddress}
+                        type="text"
+                        id="email"
+                        className="p-10 border-silver br-5 f-15"
+                        placeholder="Email"
+                      />
+                    </label>
+                    <label htmlFor="phone" className="">
+                      <p className="b-300 m-b-5">Phone Number</p>
+                      <input
+                        onChange={(e) => setFormData({ ...formData, phoneNumber: e.target.value })}
+                        value={formData.phoneNumber}
+                        type="text"
+                        id="phone"
+                        className="p-10 border-silver br-5 f-15"
+                        placeholder="Phone"
+                      />
+                    </label>
+                    <label htmlFor="Password" className="">
+                      <p className="b-300 m-b-5">Password</p>
+                      <input
+                        onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+                        value={formData.password}
+                        type="text"
+                        id="Password"
+                        className="p-10 border-silver br-5 f-15"
+                        placeholder="Password"
+                      />
+                    </label>
+                    <label htmlFor="Country" className="">
+                      <p className="b-300 m-b-5">Country</p>
+                      <input
+                        onChange={(e) => setFormData({ ...formData, country: e.target.value })}
+                        value={formData.country}
+                        type="text"
+                        id="Country"
+                        className="p-10 border-silver br-5 f-15"
+                        placeholder="Country"
+                      />
+                    </label>
+                    {/* <label htmlFor="Address" className="">
                       <p className="b-300 m-b-5">Address</p>
                       <input type="text" id="Address" className="p-10 border-silver br-5 f-15" placeholder="Address" />
-                    </label>
-                    <label htmlFor="city" className="">
+                    </label> */}
+                    {/* <label htmlFor="city" className="">
                       <p className="b-300 m-b-5">City</p>
                       <input type="text" id="city" className="p-10 border-silver br-5 f-15" placeholder="City" />
-                    </label>
+                    </label> */}
                     <label htmlFor="firstname" className="">
-                      <p className="b-300 m-b-5">Province</p>
-                      <select name="" id="" className="p-10 border-silver br-5 f-15 bg-white">
-                        <option value="" className="">Select a province</option>
-                        <option value="" className="">Option 2</option>
-                        <option value="" className="">Option 3</option>
+                      <p className="b-300 m-b-5">Role</p>
+                      <select
+                        onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                        value={formData.role}
+                        name=""
+                        id=""
+                        className="p-10 border-silver br-5 f-15 bg-white"
+                      >
+                        <option value="" className="">Select a role</option>
+                        <option value="client" className="">Client</option>
+                        <option value="organization" className="">Organization</option>
                       </select>
                     </label>
-                    <label htmlFor="postalCode" className="">
+                    {/* <label htmlFor="postalCode" className="">
                       <p className="b-300 m-b-5">Postal code</p>
                       <input type="text" id="postalCode" className="p-10 border-silver br-5 f-15" placeholder="Postal code" />
                     </label>
                     <label htmlFor="PhoneNumber" className="">
                       <p className="b-300 m-b-5">Phone number</p>
                       <input type="text" id="PhoneNumber" className="p-10 border-silver br-5 f-15" placeholder="Phone number" />
-                    </label>
+                    </label> */}
                   </div>
 
-                  <div className={`${s.form_footer} m-t-60`}>
+                  {/* <div className={`${s.form_footer} m-t-60`}>
                     <p className="b-600">Busines type</p>
                     <p className="b-300">
                       Are you signing up on behalf of a business, or are
@@ -122,6 +214,11 @@ export default function Register() {
                         <input type="text" id="firstname" className="p-10 border-silver br-5 f-15" placeholder="Your position / title" />
                       </label>
                     </div>
+                  </div> */}
+                  <div className={`${s.buttons_container} flex flex-row g-15 p-15 justify-center m-t-40`}>
+                    <button type="submit" className="btn bg-dark-teal white-text p-l-40 p-r-40">
+                      Register
+                    </button>
                   </div>
                 </form>
               </Paper>
@@ -129,7 +226,7 @@ export default function Register() {
               {/* =============== */}
               {/* Proceed Section */}
               {/* =============== */}
-              <section className={`${s.proceed} m-t-60`}>
+              {/* <section className={`${s.proceed} m-t-60`}>
                 <p className="b-300">
                   By continuing, you accept the <a href="/" className="dark-teal-text">AlwaysLegal Terns of Use</a>
                   and <a href="/" className="dark-teal-text">Privacy Policy</a>
@@ -142,7 +239,7 @@ export default function Register() {
                     Next
                   </button>
                 </div>
-              </section>
+              </section> */}
             </div>
           </div>
         </main>
