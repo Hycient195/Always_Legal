@@ -28,8 +28,16 @@ export default function Register() {
       country: formData.country,
       role: formData.role,
     };
-    dispatch(register(formSendData));
-    navigate("/");
+    dispatch(register(formSendData, navigate));
+    setFormData({
+      firstName: "",
+      lastName: "",
+      emailAddress: "",
+      phoneNumber: "",
+      password: "",
+      country: "",
+      role: "",
+    });
     console.log(formData);
   };
 
@@ -148,7 +156,7 @@ export default function Register() {
                       <input
                         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                         value={formData.password}
-                        type="text"
+                        type="password"
                         id="Password"
                         className="p-10 border-silver br-5 f-15"
                         placeholder="Password"

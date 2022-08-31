@@ -19,8 +19,11 @@ export default function Login() {
       user: formData.user,
       password: formData.password,
     };
-    dispatch(login(formSendData));
-    navigate("/");
+    dispatch(login(formSendData, navigate));
+    setFormData({
+      user: "",
+      password: "",
+    });
     console.log(formData);
   };
 
@@ -58,7 +61,7 @@ export default function Login() {
                       <input
                         onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                         value={formData.password}
-                        type="text"
+                        type="password"
                         id="Password"
                         className="p-10 border-silver br-5 f-15"
                         placeholder=""
