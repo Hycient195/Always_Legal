@@ -1,11 +1,13 @@
 import { Paper } from "@mui/material";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { login } from "../../redux/actions/actions";
 import s from "./Login.module.css";
 
 export default function Login() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     user: "",
     password: "",
@@ -18,6 +20,7 @@ export default function Login() {
       password: formData.password,
     };
     dispatch(login(formSendData));
+    navigate("/");
     console.log(formData);
   };
 

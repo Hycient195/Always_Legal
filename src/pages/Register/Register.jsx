@@ -1,11 +1,13 @@
 import { Paper } from "@mui/material";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { register } from "../../redux/actions/actions";
 import s from "./Register.module.css";
 
 export default function Register() {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -27,6 +29,7 @@ export default function Register() {
       role: formData.role,
     };
     dispatch(register(formSendData));
+    navigate("/");
     console.log(formData);
   };
 
