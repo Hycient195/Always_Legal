@@ -172,10 +172,10 @@ div.dropdown > ul.mobile_nav > li {
   color: black;
 }
 
-div.dropdown > ul.mobile_nav > li:hover {
+/* div.dropdown > ul.mobile_nav > li:hover {
   background: linear-gradient(92.34deg, #FFDE17 -35.71%, #F26522 100.76%);
   color: white;
-}
+} */
 
 div.dropdown > ul.mobile_nav > li > a {
   padding: var(--base-padding) !important;
